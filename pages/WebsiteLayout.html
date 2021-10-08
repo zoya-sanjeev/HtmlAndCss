@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Layout Flex</title>
+    <style>
+        header, footer {
+        background: yellowgreen;
+        height: 20vh;
+        }
+        #main > nav, 
+        #main > aside {
+            flex: 0 0 20vw;
+            background: beige;
+        }
+        #main > nav {
+            order: -1;
+        }
+        body {
+        padding: 2em;
+        }
+        .headerContainer {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        background:lightgreen;
+        font-weight: bold;
+        padding: 10px;
+        }
+        .mainContainer {
+        display: flex;
+        flex-flow: row wrap;
+        font-weight: bold;
+        text-align: center;
+        }
+        .footerContainer {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        background: lightgreen;
+        font-weight: bold;
+        padding: 10px;
+        }
+        .mainContentItem {
+        text-align: left;
+        background: deepskyblue;
+        order:2;
+        }
+        .navigationItem{
+        background: white;
+        order:1;
+        }
+        .asideItem{
+            background: white;
+            order: 3;
+        }
+        .sideItem {
+        flex: 1 0 0;
+        border: 0px solid green;
+        }
+      </style>
+</head>
+<body>
+    <header class="headercontainer"><h1> Website Layout Sample</h1></header>
+  <div class="maincontainer">
+      <section class="mainContentItem">
+    <article>
+                <h2>First article</h2>
+                <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. 
+                   or Mexican street food, which have spread around the world.</p>
+            </article>
+            <article>
+                <h2>Second article</h2>
+                <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter.</p>
+            </article>
+            <article>
+                <h2>Third article</h2>
+                <p> Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter.</p>
+                <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit</p>
+            </article>
+      </section>
+    <nav class="sideItem navigationItem">Nav</nav>
+    <aside class="sideItem asideItem">Aside</aside>
+  </div>
+  <footer>Footer</footer>
+    
+</body>
+</html>
