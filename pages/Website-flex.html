@@ -1,0 +1,98 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    flex: 2;
+  }
+  #main > article {
+    flex: 1;
+    order: 2;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+  }
+  #main > nav {
+    background: #D7E8D4;
+    order: 1;
+  }
+  #main > aside {
+    background: lightgrey;
+    order: 3;
+  }
+  footer {
+    background: lightgreen;
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+  .footerContainer {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: left;
+  background: #90dbee;
+  font-weight: bold;
+  padding: 10px;
+  height: 10vh;
+  text-align: center;
+}
+.headerContainer {
+  display: flex;
+  flex-flow: column wrap;
+  background-color:lightseagreen;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  height: 10vh;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+</style>
+<body>
+    <header class="headerContainer">
+        <h1>Bridgelabz is cool</h1>
+       
+    </header>
+  <div id="main">
+    <article>
+        <img src="../assets/BL_logo.jpg" alt="Hover text" width="25%" class="center">
+        <p> At BridgeLabz, we're a techie community of</p>
+        <ul>
+            <li>technologists</li>
+            <li>thinkers</li>
+            <li>builders</li>
+        </ul>
+        <p>Working togther to keep the tech Employability of Engineers alive and accessible, so Tech Companies worldwide can get
+           contributors and creators for Technology Solutions. We beleive this act of human collaboration across an Employability
+           platform is essential to individual growth and our collective future.</p>
+           <p> To know about us, visit <a href="https://www.bridgelabz.com/">BridgeLabz</a> to learn even more about our mission i.e
+              <strong>Employability to all</strong></p>
+
+    </article>
+    <nav>NAVIGATOR
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT US</li>
+        </ul>
+    </nav>
+    <aside>ASIDE</aside>
+  </div>
+  <footer class="footerContainer">Footer</footer>
+</body>
